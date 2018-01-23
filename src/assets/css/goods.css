@@ -1,0 +1,15 @@
+@media only screen and (min-width: 991px){
+	.accessory-list .main .btn-area .btn {font-size: 1.0rem; padding:0;}
+    .accessory-list .main .btn-area .btn {width: 48%;}
+    .accessory-list .main .btn-area .btn--m {height: 34px;line-height: 34px;}
+}
+@media only screen and (max-width: 1024px){
+    .accessory-list .main .btn-area .btn {font-size: 1.0rem; padding:0;}
+    .accessory-list .main .btn-area .btn {width: 48%; letter-spacing: 0;}
+    .accessory-list .main .btn-area .btn--m {height: 32px;line-height: 32px;}
+}
+@media only screen and (max-width: 1024px){
+	.accessory-list .main .btn-area{
+		float: none;
+	}
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>actions</title>
+	<script src='../../node_modules/vue/dist/vue.js'></script>
+	<script src='../../node_modules/vuex/dist/vuex.min.js'></script>
+</head>
+<body>
+<div id="app">
+	<h2>{{msg}}</h2>
+	<button @click="add">递增</button>
+	<counter></counter>
+</div>
+<script>
+    const counter = ({
+    	template:`
+    	<div>{{ count }}</div>
+    	`,
+    	computed: {
+    		count() {
+    			return this.$store.state.count;
+    		}
+    	}
+    });
+    const store = new Vuex.Store({
+    	state: {
+    		count:0
+    	},// getters可以改变state里的值 用法和state一样获取值时用 this.$store.getters.xxx;
+    	mutations: {// 只能是同步操作
+    		increment(state) {//可以设置多个参数
+    			state.count++;
+    		}
+    	},
+    	actions:{ // 异步操作
+    		incrementAction(context) { // 可以传参数 做法在后面添加参数
+    			context.commit("increment");//提交mutations
+    		}
+    	}
+    });
+	new Vue({
+		el:"#app",
+		store,
+		data:{
+			msg:'vuex的使用'
+		},
+		methods:{
+			add() {
+				this.$store.dispatch('incrementAction');// 触发
+			}
+		},
+		components: {
+			counter
+		}
+	});
+</script>
+
+</body>
+</html>
