@@ -21,7 +21,7 @@ https://github.com/wzz5304/vueMall.git
 # 安装依赖：
 vue:
 ....
-cd vueMall-master(进入项目文件下)
+cd vueMall(进入项目文件下)
 npm install （安装依赖）
 
 express:(进入项目文件下)
@@ -47,6 +47,8 @@ npm run build
   键入命令：cnpm i -g express-generator
 
 不懂的改后台监听端口的可以[打开](https://juejin.im/post/5a5eac7af265da3e4f0a2fba)查看，对你有帮助记得给个爱心哦，谢谢！
+
+小伙伴们右上角狠狠给个Star吧，谢谢~
 
 ### 项目说明
 - 用到的技术栈
