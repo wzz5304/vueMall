@@ -1,5 +1,7 @@
 ## 这是一个基于vue全家桶+node.js+express+mysql实现的商城网站
 
+注意：本项目只是一个个人demo，只用于学习交流，故不在维护！
+
 项目github地址：[vueMall](https://github.com/wzz5304/vueMall)
 
 如果觉得对您有帮助，您可以在右上角给我个star支持一下，谢谢！
